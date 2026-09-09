@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import LikeButton from "@/components/LikeButton";
 import { getCourse, getCourses } from "@/lib/courses";
 
 type CoursePageProps = {
@@ -23,6 +24,7 @@ export default async function CoursePage({ params }: CoursePageProps) {
       <h1>{course.title}</h1>
       <p>{course.description}</p>
       <p>{course.credits} credits</p>
+      <LikeButton initialLikes={course.likes} />
     </div>
   );
 }
