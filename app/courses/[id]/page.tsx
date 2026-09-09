@@ -13,6 +13,11 @@ export async function generateStaticParams() {
 
 export default async function CoursePage({ params }: CoursePageProps) {
   const { id } = await params;
+
+  if (id === "broken") {
+    throw new Error("Simulated failure while loading this course.");
+  }
+
   const course = await getCourse(id);
 
   if (!course) {
