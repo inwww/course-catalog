@@ -17,7 +17,6 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
-        // Custom variant: terracotta "ink stamp" with an offset hard shadow
         stamp:
           "border-ember-deep bg-ember text-white shadow-[3px_3px_0_0_var(--color-ember-deep)] hover:translate-x-px hover:translate-y-px hover:shadow-[2px_2px_0_0_var(--color-ember-deep)] active:not-aria-[haspopup]:translate-x-[3px] active:not-aria-[haspopup]:translate-y-[3px] active:shadow-none",
       },

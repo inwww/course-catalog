@@ -12,7 +12,6 @@ type CourseCardProps = {
   likes: number;
 };
 
-// "modern-frontend" -> "MF", used as a library-style index code
 function courseCode(id: string) {
   return id
     .split("-")

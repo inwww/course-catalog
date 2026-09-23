@@ -2,10 +2,8 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-/* Dark mode follows the OS setting, no toggle needed */
 @custom-variant dark (@media (prefers-color-scheme: dark));
 
-/* Custom brand colors: terracotta "ember" accent used across the UI */
 @theme {
     --color-ember: oklch(0.58 0.16 40);
     --color-ember-deep: oklch(0.48 0.14 38);
@@ -56,7 +54,6 @@
     --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* Light: warm paper + dark ink */
 :root {
     --background: oklch(0.972 0.012 85);
     --foreground: oklch(0.23 0.02 55);
@@ -92,7 +89,6 @@
     --sidebar-ring: oklch(0.708 0 0);
 }
 
-/* Dark: burnt espresso + paper-colored ink */
 @media (prefers-color-scheme: dark) {
     :root {
         --background: oklch(0.18 0.012 55);
