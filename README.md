@@ -24,6 +24,17 @@ I did one bonus task: an error boundary (`app/courses/error.tsx`). If you
 go to `/courses/broken` it will show an error page instead of crashing
 the whole app.
 
+## Lab 2 — Styling
+
+Styled the whole catalog with Tailwind CSS and shadcn/ui: `CourseCard` now uses
+`Card` / `CardHeader` / `CardTitle` / `CardContent` / `Button`, the course list
+is a responsive grid (1 / 2 / 3 / 4 columns), and the nav is styled with a
+hover state and highlights the current page (`components/NavBar.tsx`).
+
+Bonus tasks: custom `ember` color in the `@theme` block, dark mode that follows
+the system setting (`dark:` prefix), a custom `stamp` Button variant, plus the
+`badge` and `skeleton` components (course code / credits, loading state).
+
 ## How to run it
 
 ```bash
